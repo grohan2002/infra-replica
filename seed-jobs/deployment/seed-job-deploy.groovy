@@ -1,8 +1,8 @@
 // Credential
-String creds = readFileFromWorkspace('DSL/shared/credential/Creds.txt')
+String creds = readFileFromWorkspace('shared/credential/Creds.txt')
 
 // Repos
-List<String> repos = readFileFromWorkspace('DSL/repo/repo.txt').split(',')
+List<String> repos = readFileFromWorkspace('repo/repo.txt').split(',')
 
 for (String my_repo : repos) {
 // Create job
