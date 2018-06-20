@@ -2,12 +2,12 @@
 String creds = readFileFromWorkspace('shared/credential/Creds.txt')
 
 // Repos
-List<String> repos = readFileFromWorkspace('repo/repo.txt').split(',')
+List<String> jobs = readFileFromWorkspace('job/job.txt').split(',')
 
-for (String my_repo : repos) {
+for (String my_job : jobs) {
 // Create job
-multibranchPipelineJob("${my_repo}") {
-  displayName("${my_repo}")
+multibranchPipelineJob("${my_job}") {
+  displayName("${my_job}")
   branchSources {
     github {
       repoOwner("Juhibhadviya19")
