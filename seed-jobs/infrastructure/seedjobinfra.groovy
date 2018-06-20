@@ -37,7 +37,7 @@ pipelineJob("google-compute-snapshot") {
 
 // Create disk-usage job
 
-job("hdx-jenkins-disk-space-monitor") {
+/*freeStyleJob("hdx-jenkins-disk-space-monitor") {
 	description("Every hour, checks how full the Jenkins disks are, sends warning to Slack if full.")
 	keepDependencies(false)
 	// The cron will run every hour on the hour.
@@ -53,7 +53,7 @@ job("hdx-jenkins-disk-space-monitor") {
 						github("Juhibhadviya19/Jenkinsdiskspace", "https")
 						credentials("${creds}")
 					}
-					branch("*/master")
+					branch("*master")
 				}
 			}
 			scriptPath("Jenkinsfile")
@@ -66,7 +66,7 @@ job("hdx-jenkins-disk-space-monitor") {
 			displayName()
 		}
 	}
-}
+}*/
 
 
 
