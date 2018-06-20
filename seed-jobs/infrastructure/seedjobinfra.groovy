@@ -1,5 +1,5 @@
 // Credential
-String creds = readFileFromWorkspace('DSL/shared/credential/Creds.txt')
+String creds = readFileFromWorkspace('shared/credential/Creds.txt')
 
 // Create snapshot job
 
