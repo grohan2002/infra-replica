@@ -1,7 +1,7 @@
 // Credential
 String creds = readFileFromWorkspace('shared/credential/Creds.txt')
 
-// Repos
+// Job Names
 List<String> jobs = readFileFromWorkspace('job/job.txt').split(',')
 
 for (String my_job : jobs) {
