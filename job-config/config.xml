@@ -18,7 +18,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/infra</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -40,8 +40,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.64">
-      <targets>seed-jobs/deployment/seedjobdeploy.groovy
-seed-jobs/infrastructure/seedjobinfra.groovy</targets>
+      <targets>seed-jobs/infrastructure/seedjobinfra.groovy</targets>
       <usingScriptText>false</usingScriptText>
       <sandbox>true</sandbox>
       <ignoreExisting>false</ignoreExisting>
