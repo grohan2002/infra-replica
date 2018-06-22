@@ -1,6 +1,6 @@
 // Credential
-String creds = readFileFromWorkspace('shared/credential/Creds.txt')
-
+String creds_snapshot = readFileFromWorkspace('shared/credential/Creds_snapshot.txt')
+String creds_space = readFileFromWorkspace('shared/credential/Creds_space.txt')
 // Create snapshot job
 
 pipelineJob("google-compute-snapshot") {
@@ -17,7 +17,7 @@ pipelineJob("google-compute-snapshot") {
 				git {
 					remote {
 						github("Juhibhadviya19/snapshot-job", "https")
-						credentials("${creds}")
+						credentials("${creds_snapshot}")
 					}
 					branch("*/master")
 				}
@@ -49,7 +49,7 @@ pipelineJob("hdx-jenkins-disk-space-monitor") {
 				git {
 					remote {
 						github("Juhibhadviya19/Jenkinsdiskspace", "https")
-						credentials("${creds}")
+						credentials("${creds_space}")
 					}
 					branch("*/master")
 				}
